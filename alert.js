@@ -64,10 +64,10 @@ function deposit() {
 }
 
 function pow_analog() {
-    let number = prompt('Введите число', '');
-    if (!isNaN(number)) {
-        let exponentiation = prompt('В какую степень возвести?');
-        if (!isNaN(exponentiation)) {
+    let number = prompt('Введите число', '').trim();
+    if (!isNaN(number) && number !== null && number !=='') {
+        let exponentiation = prompt('В какую степень возвести?').trim();
+        if (!isNaN(exponentiation) && exponentiation !== null && exponentiation !=='') {
             alert('Результат :' + toExponent(number,exponentiation));
         } else
             alert('Вы ввели не число!');
