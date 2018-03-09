@@ -4,7 +4,7 @@ function goodbye() {
     alert('До новых встреч!');
 }
 
-//функция расчета процента
+//функция рассчета процента
 function calculateRate(deposit, term) {
     switch (term) {
         case 2:
